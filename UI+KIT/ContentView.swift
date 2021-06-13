@@ -11,11 +11,7 @@ struct ContentView: View {
     @State private var currentValue: Float = 0
     @State private var targetValue = Int.random(in: 0...100)
     @State private var alertPresented = false
-    @State private var scores = 0
-    @State private var alpha = 0
     
-    private var alphaColor = 0
-
     var body: some View {
         VStack {
             Text ("Подвиньте слайдер, как можно ближе к: \(targetValue) ")
