@@ -8,9 +8,45 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var currentValue: Float = 0
+    @State private var targetValue = Int.random(in: 0...100)
+    @State private var alertPresented = false
+    @State private var scores = 0
+    @State private var alpha = 0
+    
+    private var alphaColor = 0
+
     var body: some View {
-        Text("Hello, world!")
+        VStack {
+            Text ("Подвиньте слайдер, как можно ближе к: \(targetValue) ")
+                .padding()
+            HStack {
+                Text("0")
+                SliderUIKit(targetValue: $targetValue, currentValue: $currentValue)
+                Text("100")
+            }
             .padding()
+            ButtonView(title: "Проверь меня!") {
+                alertPresented = true
+            }
+                .alert(isPresented: $alertPresented) {
+                    Alert(title: Text("You score: "),
+                          message: Text("\(computeScore())"))
+                }
+     
+            ButtonView(title: "Начать заново!", action: reloadDate)
+                .padding()
+        }
+    }
+    
+    private func computeScore() -> Int {
+        let difference = abs(targetValue - lround(Double(currentValue)))
+        return 100 - difference
+    }
+    
+    private func reloadDate() {
+        let randomTargetValue = Int.random(in: 0...100)
+        targetValue = randomTargetValue
     }
 }
 

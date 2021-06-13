@@ -11,6 +11,8 @@
 		C11F9452267356020094D230 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11F9451267356020094D230 /* ContentView.swift */; };
 		C11F9454267356050094D230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11F9453267356050094D230 /* Assets.xcassets */; };
 		C11F9457267356050094D230 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11F9456267356050094D230 /* Preview Assets.xcassets */; };
+		C11F945F26737B510094D230 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11F945E26737B510094D230 /* ButtonView.swift */; };
+		C11F9463267387730094D230 /* SliderUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11F9462267387730094D230 /* SliderUIKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		C11F9453267356050094D230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C11F9456267356050094D230 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C11F9458267356050094D230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C11F945E26737B510094D230 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		C11F9462267387730094D230 /* SliderUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderUIKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				C11F944F267356020094D230 /* UI_KITApp.swift */,
 				C11F9451267356020094D230 /* ContentView.swift */,
+				C11F9462267387730094D230 /* SliderUIKit.swift */,
+				C11F945E26737B510094D230 /* ButtonView.swift */,
 				C11F9453267356050094D230 /* Assets.xcassets */,
 				C11F9458267356050094D230 /* Info.plist */,
 				C11F9455267356050094D230 /* Preview Content */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C11F9452267356020094D230 /* ContentView.swift in Sources */,
+				C11F9463267387730094D230 /* SliderUIKit.swift in Sources */,
+				C11F945F26737B510094D230 /* ButtonView.swift in Sources */,
 				C11F9450267356020094D230 /* UI_KITApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
