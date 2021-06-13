@@ -18,7 +18,9 @@ struct ContentView: View {
                 .padding()
             HStack {
                 Text("0")
-                SliderUIKit(targetValue: $targetValue, currentValue: $currentValue)
+                SliderUIKit(
+                    targetValue: $targetValue,
+                    currentValue: $currentValue)
                 Text("100")
             }
             .padding()
